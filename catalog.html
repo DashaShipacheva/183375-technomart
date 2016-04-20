@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="upper-header">
@@ -99,12 +100,10 @@
           </div>
           <div class="power-filter">
             <h2>Питание:</h2>
-            <label>
-              <input type="radio" name="powersup" value="">Аккумуляторные 
-            </label>
-            <label>
-              <input type="radio" name="powersup" value="">Сетевые
-            </label>
+            <label for="power-1">Аккумуляторные</label>
+            <input type="radio" name="powersup" id="power-1" value="battery"> 
+            <label for="power-2">Сетевые</label>
+            <input type="radio" name="powersup" id="power-2" value="network">
             <button class="btn" type="submit">Показать</button>
           </div>
         </form>
@@ -126,9 +125,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 3000</p>
             <div class="price">22 500 Р.</div>
             <div class="new-price">15 500 Р.</div>
           </article>
@@ -139,9 +138,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 6000</p>
             <div class="price">30 500 Р.</div>
             <div class="new-price">25 500 Р.</div>
           </article>
@@ -152,9 +151,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 2000</p>
             <div class="new-price">12 500 Р.</div>
           </article>
           <article class="catalog-item">
@@ -164,9 +163,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 3000</p>
             <div class="price">22 500 Р.</div>
             <div class="new-price">15 500 Р.</div>
           </article>
@@ -177,9 +176,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 6000</p>
             <div class="price">30 500 Р.</div>
             <div class="new-price">25 500 Р.</div>
           </article>
@@ -190,9 +189,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 2000</p>
             <div class="new-price">12 500 Р.</div>
           </article>
           <article class="catalog-item">
@@ -202,9 +201,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 3000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 3000</p>
             <div class="price">22 500 Р.</div>
             <div class="new-price">15 500 Р.</div>
           </article>
@@ -215,9 +214,9 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-945 copy 2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 6000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 6000</p>
             <div class="price">30 500 Р.</div>
             <div class="new-price">25 500 Р.</div>
           </article>
@@ -228,18 +227,18 @@
               <a href="#" class="btn btn-bookmark">В закладки</a>
             </div>
             <figure class="image">
-              <img src="#" width="" height="" alt="">
+              <img src="img/snippet-18927 copy 3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </figure>
-            <div class="title">Перфоратор BOSCH BFG 2000</div>
+            <p class="item-name">Перфоратор BOSCH BFG 2000</p>
             <div class="new-price">12 500 Р.</div>
           </article>    
         </div>
-        <div class="paginator">
+        <nav class="paginator">
           <a href="#">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">Следующая</a>
-        </div>
+        </nav>
       </div>
       <div class="about-perforator">
         <h1>Пара слов о перфораторах</h1>
