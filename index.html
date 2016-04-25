@@ -10,7 +10,7 @@
     <header class="upper-header">
       <div class="container">
         <div class="header-logo">Техномарт</div>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
           <input type="submit" name="search-icon">
           <input type="search" name="search" placeholder="Поиск:">
         </form>
@@ -55,7 +55,7 @@
     </header>
     <main>
       <div class="container">
-        <section class="categories">
+        <section class="categories clearfix">
           <article class="category1 new">
             <h3 class="category-title">Материалы</h3>
             <div class="category-image"></div>
@@ -71,16 +71,6 @@
             <div class="category-image"></div>
             <a class="btn-categories" href="#">Для стройки</a>
           </article>
-          <article class="category4">
-            <h3 class="category-title">Скидки 50%</h3>
-            <div class="category-image"></div>
-            <a class="btn-categories" href="#">На 350 товаров</a>
-          </article>
-          <article class="category5">
-            <h3 class="category-title">Доставка</h3>
-            <div class="category-image"></div>
-            <a class="btn-categories" href="#">Бесплатно</a>
-          </article>
           <div class="slider">
             <h1>Перфораторы</h1>
             <p>Настоящие мужские игрушки</p>
@@ -92,10 +82,19 @@
             </div>
             <div class="slider-slides">
               <img src="img/firstslide.png" width="620" height="266" alt="Перфораторы">
-              <img src="img/secondslide.png" width="620" height="266" alt="Дрели">
             </div>
             <a class="btn btn-catalog" href="#">Открыть каталог</a>
           </div>
+          <article class="category4">
+            <h3 class="category-title">Скидки 50%</h3>
+            <div class="category-image"></div>
+            <a class="btn-categories" href="#">На 350 товаров</a>
+          </article>
+          <article class="category5">
+            <h3 class="category-title">Доставка</h3>
+            <div class="category-image"></div>
+            <a class="btn-categories" href="#">Бесплатно</a>
+          </article>
         </section>
         <section class="popular">
           <div class="popular-header">
@@ -139,7 +138,7 @@
             <h2>Популярные производители:</h2>
             <a class="btn btn-popular" href="#">Все производители</a>
           </div>
-          <div class="popular-producers">
+          <div class="popular-producers clearfix">
             <a href="#"><img src="img/bosch.png" width="125" height="37" alt="BOSCH"></a>
             <a href="#"><img src="img/Makita.png" width="123" height="40" alt="Makita"></a>
             <a href="#"><img src="img/DeWALT.png" width="146" height="48" alt="DeWalt"></a>
@@ -151,7 +150,7 @@
           </div> 
         </div>
         <section class="services">
-          <div class="container">
+          <div class="container clearfix">
             <div class="services-header">
               <h2>Сервисы</h2>
               <p>
@@ -165,20 +164,20 @@
                 <li>Гарантия</li>
                 <li>Кредит</li>
               </ul>
-              <div class="services-description">
-                <span class="delivery">Доставка</span>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!
-                </p>
-              </div>
+            </div>
+            <div class="services-description">
+              <span class="delivery">Доставка</span>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем,<br>
+                поднимая его на ваш этаж!
+              </p>
             </div>
           </div>
       </section>
       <section class="company">
-        <div class="container">
+        <div class="container clearfix">
           <div class="company-info">
             <h2>Компания «Техномарт»</h2>
             <p>
@@ -210,15 +209,9 @@
       </section>
     </main>
     <footer class="upper-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-logo">
           <a class="footer-main-logo" href="#">Техномарт</a>
-        </div>
-        <div class="footer-contacts">
-          <p>
-            г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-             +7 (812) 555-05-55
-          </p>
         </div>
         <div class="second-nav">
           <ul>
@@ -228,6 +221,12 @@
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
+        </div>
+        <div class="footer-contacts">
+          <p>
+            г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+            +7 (812) 555-05-55
+          </p>
         </div>
         <div class="third-nav">
           <ul>
@@ -240,7 +239,7 @@
       </div>
     </footer>
     <footer class="bottom-footer">
-      <div class="container">
+      <div class="container clearfix">
         <div class="footer-copyright">
           <p>
             © 2010-2016 Компания «Техномарт»<br>
@@ -256,7 +255,7 @@
           <p>Обратная связь:</p>
           <a class="mail" href="#">mail@htmlacademy.ru</a>
         </div>
-        <div class="designed">
+        <div class="footer-designed">
           <p>Разработано:</p>
           <a class="mail" href="https://htmlacademy.ru">HTML Academy</a>
         </div>

@@ -4,17 +4,451 @@ body {
   color: #000000;
   font-weight: normal;
   font-family: "PTSans Regular";
+  margin: 0;
+  padding: 0;
 }
-h1 {
-  font-size: 36px;
-  line-height: 30px;
-  color: #32425c;
-  font-weight: bold;
-  font-family: "Cuprum Bold";
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
 }
-h2 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  font-family: "Cuprum Regular";
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+/* только для оформления сетки */
+  background-color: aqua;
 }
+
+.upper-header {
+/* только для оформления сетки */
+  background-color: crimson;
+  font-size: 0px;
+}
+
+.header-logo {
+/* только для оформления сетки */
+  background-color: chartreuse;
+  min-height: 42px;
+  display: inline-block;
+  width: 220px;
+  margin-right: 10px; 
+  vertical-align: top;
+  font-size: 17px; 
+}
+
+.header-search {
+  /* только для оформления сетки */
+  background-color: blueviolet; 
+  min-height: 42px;
+  display: inline-block;
+  width: 240px;
+  margin-right: 10px; 
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.header-bookmarks {
+  /* только для оформления сетки */
+  background-color: gold;
+  min-height: 42px;
+  display: inline-block;
+  width: 150px;
+  margin-right: 10px; 
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.header-cart {
+  /* только для оформления сетки */
+  background-color: red;
+  min-height: 42px;
+  display: inline-block;
+  width: 140px;
+  margin-right: 10px; 
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.header-order {
+/* только для оформления сетки */
+  background-color: darkkhaki;
+  min-height: 42px;
+  display: inline-block;
+  width: 150px; 
+  vertical-align: top;
+  font-size: 17px;
+}
+
+.bottom-header {
+  padding-top: 46px;
+  padding-bottom: 60px;
+  font-size: 0px;
+  /* только для оформления сетки */
+  min-height: 280px;
+  background-color: brown;
+}
+
+.header-information {
+  /* только для оформления сетки */
+  background-color: bisque;
+  display:inline-block;
+  width: 300px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 16px;
+}
+
+.header-contacts {
+  /* только для оформления сетки */
+  background-color: aquamarine;
+  display:inline-block;
+  width: 300px;
+  margin-right: 20px;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.user-block {
+  /* только для оформления сетки */
+  background-color: chartreuse;
+  display:inline-block;
+  width: 300px;
+  vertical-align: top;
+  font-size: 21px;
+}
+
+.main-navigation {
+/* только для оформления сетки */
+  background-color: coral;
+  width: 940px;
+  font-size: 17px;
+}
+
+.categories {
+  padding-top: 59px;
+  margin-bottom: 55px;
+}
+
+.category1 {
+  /* только для оформления сетки */
+  background-color: blueviolet;
+  min-height: 123px;
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+
+.category2 {
+  /* только для оформления сетки */
+  background-color: blanchedalmond;
+  min-height: 123px;
+  float: left;
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 22px;
+}
+
+.category3 {
+  /* только для оформления сетки */
+  background-color: darkgrey;
+  min-height: 123px;
+  float: left;
+  width: 300px;
+  margin-bottom: 22px;
+}
+
+.category4 {
+  /* только для оформления сетки */
+  background-color: chartreuse;
+  min-height: 123px;
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
+
+.category5 {
+  /* только для оформления сетки */
+  background-color: darkgoldenrod;
+  min-height: 123px;
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.slider {
+  /* только для оформления сетки */
+  background-color: cadetblue;
+  float: left;
+  width: 620px;
+}
+
+.popular-header {
+  /* только для оформления сетки */
+  background-color: antiquewhite;
+  min-width: 90px;
+  margin-bottom: 20px;
+  padding-top: 1px;
+}
+
+.catalog-items {
+  font-size: 0px;
+}
+
+.catalog-item {
+  /* только для оформления сетки */
+  background-color: cornsilk;
+  height: 318px;
+  display: inline-block;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.catalog-item:nth-child(4),
+.catalog-item:nth-child(7),
+.catalog-item:nth-child(10) {
+  margin-right: 0px;
+}
+
+.popular-producers {
+  /* только для оформления сетки */
+  background-color: crimson;
+  margin-bottom: 85px;
+}
+
+.popular-producers a {
+  min-height: 145px;
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.popular-producers a:nth-child(4n+4) {
+  margin-right: 0px;
+}
+
+.services {
+  /* только для оформления сетки */
+  background-color: burlywood;
+  padding-top: 68px;
+  padding-bottom: 102px;
+  margin-bottom: 82px;
+}
+
+.services-header {
+  /* только для оформления сетки */
+  background-color: chartreuse;
+  width: 400px;
+  margin-bottom: 74px;
+}
+
+.services-slider {
+  /* только для оформления сетки */
+  background-color: azure;
+  min-height: 183px;
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.services-description {
+  /* только для оформления сетки */
+  background-color: darkgray;
+  float: left;
+  width: 300px;
+}
+
+.company {
+  margin-bottom: 86px;
+}
+
+.company-info {
+  /* только для оформления сетки */
+  background-color: darkgoldenrod;
+  min-height: 368px;
+  float: left;
+  width: 540px;
+  margin-right: 100px;
+}
+
+.company-map {
+  /* только для оформления сетки */
+  background-color: darkolivegreen;
+  min-height: 368px;
+  float: right;
+  width: 300px;
+}
+
+.upper-footer {
+  /* только для оформления сетки */
+  background-color: chocolate;
+  padding-bottom: 53px;
+}
+
+.footer-logo {
+  /* только для оформления сетки */
+  background-color: darksalmon;
+  min-height: 68px;
+  float: left;
+  width: 220px;
+  margin-bottom: 32px;
+}
+
+.footer-contacts {
+  /* только для оформления сетки */
+  background-color: dodgerblue;
+  float: left;
+  width: 380px;
+  margin-right: 10px;
+}
+
+.second-nav {
+  /* только для оформления сетки */
+  background-color: darkorchid;
+  float: right;
+  width: 550px;
+}
+
+.third-nav {
+  /* только для оформления сетки */
+  background-color: azure;
+  float: right;
+  width: 540px;
+}
+
+.bottom-footer {
+  /* только для оформления сетки */
+  background-color: darkseagreen;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+
+.footer-copyright {
+  /* только для оформления сетки */
+  background-color: darkorange;
+  min-height: 35px;
+  float: left;
+  width: 230px;
+  margin-right: 160px;
+}
+
+.footer-social {
+  /* только для оформления сетки */
+  background-color: chartreuse;
+  min-height: 35px;
+  float: left;
+  width: 150px;
+  margin-right: 100px;
+}
+
+.footer-feedback {
+  /* только для оформления сетки */
+  background-color: cornflowerblue;
+  min-height: 35px;
+  float: left;
+  width: 140px;
+}
+
+.footer-designed {
+  /* только для оформления сетки */
+  background-color: cornsilk;
+  min-height: 35px;
+  float: right;
+  width: 140px;
+}
+
+.breadcrumbs {
+  /* только для оформления сетки */
+  background-color: blueviolet;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.main-head {
+  /* только для оформления сетки */
+  background-color: cornflowerblue;
+  min-height: 89px;
+  margin-bottom: 20px;
+}
+
+.column-filters {
+  /* только для оформления сетки */
+  background-color: darkgray;
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
+.column-header1 {
+  /* только для оформления сетки */
+  background-color: greenyellow;
+  min-height: 38px;
+  float: left;
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.range-filter {
+  /* только для оформления сетки */
+  background-color: hotpink;
+  min-height: 162px;
+  margin-bottom: 25px;
+}
+
+.producers-filter {
+  /* только для оформления сетки */
+  background-color: forestgreen;
+  min-height: 262px;
+}
+
+.power-filter {
+  /* только для оформления сетки */
+  background-color: darkmagenta;
+  min-height: 634px;
+}
+
+.column-catalog {
+  /* только для оформления сетки */
+  background-color: yellow;
+  float: left;
+  width: 700px;
+}
+
+.column-sorting {
+  /* только для оформления сетки */
+  background-color: orange;
+  min-height: 38px;
+  margin-bottom: 20px;
+}
+
+.paginator {
+  /* только для оформления сетки */
+  background-color: darkseagreen;
+  min-height: 38px;
+  width: 300px;
+  margin-top: 52px;
+  margin-bottom: 60px;
+}
+
+.about-perforator {
+  /* только для оформления сетки */
+  background-color: darkcyan;
+  padding-top: 68px;
+  padding-bottom: 73px;
+}
+
+
+
+
+
+
+
+
