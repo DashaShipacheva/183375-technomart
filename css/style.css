@@ -125,7 +125,14 @@ body {
 /* только для оформления сетки */
   background-color: coral;
   width: 940px;
+  padding: 22px 0px 24px;
+  margin-top: 43px;
   font-size: 17px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .categories {
@@ -212,10 +219,12 @@ body {
   font-size: 18px;
 }
 
-.catalog-item:nth-child(4),
-.catalog-item:nth-child(7),
-.catalog-item:nth-child(10) {
-  margin-right: 0px;
+.column-catalog .catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.popular .catalog-item:last-child {
+  margin-right: 0;
 }
 
 .popular-producers {
@@ -297,7 +306,7 @@ body {
   /* только для оформления сетки */
   background-color: darksalmon;
   min-height: 68px;
-  float: left;
+  display: inline-block;
   width: 220px;
   margin-bottom: 32px;
 }
@@ -317,11 +326,29 @@ body {
   width: 550px;
 }
 
+.second-nav li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.second-nav li:last-child {
+  margin-right: 0;
+}
+
 .third-nav {
   /* только для оформления сетки */
   background-color: azure;
   float: right;
   width: 540px;
+}
+
+.third-nav li {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+.third-nav li:last-child {
+  margin-right: 0;
 }
 
 .bottom-footer {
@@ -368,8 +395,11 @@ body {
 .breadcrumbs {
   /* только для оформления сетки */
   background-color: blueviolet;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
 }
 
 .main-head {
@@ -422,11 +452,28 @@ body {
   width: 700px;
 }
 
+.column-header2 {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+}
+
 .column-sorting {
   /* только для оформления сетки */
   background-color: orange;
   min-height: 38px;
   margin-bottom: 20px;
+}
+
+.sorting-types {
+  margin: 0;
+  padding: 0;
+}
+
+.sorting-types li {
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: top;
 }
 
 .paginator {
