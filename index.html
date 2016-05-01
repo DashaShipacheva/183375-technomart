@@ -9,34 +9,35 @@
   <body>
     <header class="upper-header">
       <div class="container">
-        <div class="header-logo">Техномарт</div>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+        <a class="header-logo" href="#">Техномарт</a>
+        <form class="header-search common" action="https://echo.htmlacademy.ru" method="post">
           <input type="submit" name="search-icon">
           <input type="search" name="search" placeholder="Поиск:">
         </form>
-        <div class="header-bookmarks">
-          <a class="bookmarks" href="#">Закладки:</a>
-          <span class="bookmarks-count">0</span>
+        <div class="header-bookmarks common">
+          <a class="bookmarks" href="#">Закладки:
+          <span class="bookmarks-count">0</span></a>
         </div>
-        <div class="header-cart">
-          <a class="cart" href="#">Корзина:</a>
-          <span class="cart-count">0</span>
+        <div class="header-cart common">
+          <a class="cart" href="#">Корзина:
+          <span class="cart-count">0</span></a>
         </div>
-        <div class="header-order">
+        <div class="header-order common">
           <a class="order" href="#">Оформить заказ</a>
         </div>
       </div>
     </header>
     <header class="bottom-header">
       <div class="container">
-        <div class="header-information">
-          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="header-information general">
+          <p>Интернет-магазин строительных материалов<br> 
+             и инструментов для ремонта</p>
         </div>
-        <div class="header-contacts">
+        <div class="header-contacts general">
           <span class="tel">+7 (812) 555-05-55</span>
           <span class="address">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</span>
         </div>
-        <div class="user-block">
+        <div class="user-block general">
           <a class="login" href="#">Войти</a>
           <a class="registry" href="#">Регистрация</a>
         </div>
@@ -56,17 +57,17 @@
     <main>
       <div class="container">
         <section class="categories clearfix">
-          <article class="category1 new">
+          <article class="category category-materials new">
             <h3 class="category-title">Материалы</h3>
             <div class="category-image"></div>
             <a class="btn-categories" href="#">На любой вкус</a>
           </article>
-          <article class="category2">
+          <article class="category category-instruments">
             <h3 class="category-title">Инструменты</h3>
             <div class="category-image"></div>
             <a class="btn-categories" href="#">На все случаи</a> 
           </article>
-          <article class="category3">
+          <article class="category category-technics">
             <h3 class="category-title">Техника</h3>
             <div class="category-image"></div>
             <a class="btn-categories" href="#">Для стройки</a>
@@ -85,12 +86,12 @@
             </div>
             <a class="btn btn-catalog" href="#">Открыть каталог</a>
           </div>
-          <article class="category4">
+          <article class="category category-sales">
             <h3 class="category-title">Скидки 50%</h3>
             <div class="category-image"></div>
             <a class="btn-categories" href="#">На 350 товаров</a>
           </article>
-          <article class="category5">
+          <article class="category category-delivery">
             <h3 class="category-title">Доставка</h3>
             <div class="category-image"></div>
             <a class="btn-categories" href="#">Бесплатно</a>
@@ -211,9 +212,7 @@
     </main>
     <footer class="upper-footer">
       <div class="container clearfix">
-        <div class="footer-logo">
-          <a class="footer-main-logo" href="#">Техномарт</a>
-        </div>
+        <a class="footer-logo" href="#">Техномарт</a>
         <div class="second-nav">
           <ul>
             <li><a href="#">Компания</a></li>
