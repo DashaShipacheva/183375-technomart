@@ -41,7 +41,7 @@
         </div>
         <nav class="main-navigation">
           <ul>
-            <li><a href="index.html">Главная</a></li>
+            <li><a>Главная</a></li>
             <li><a href="#">Компания</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Новости</a></li>
@@ -78,21 +78,21 @@
               <label for="btn-next"></label>
             </div>
             <div class="arrow-controls">
-                <label for="btn-prev"></label>
-                <label for="btn-next"></label>
+              <label for="btn-prev"></label>
+              <label for="btn-next"></label>
             </div>
             <div class="slides">
               <div class="slide">
                 <div class="slide-text">
                   <div class="slide-title">Перфораторы</div>
-                  <p>Настоящие мужские игрушки</p>
+                  <b>Настоящие мужские игрушки</b>
                   <a class="btn btn-catalog" href="#">Открыть каталог</a>
                 </div>
               </div>
               <div class="slide">
                 <div class="slide-text">
                   <div class="slide-title">Дрели</div>
-                  <p>Соседям на радость!</p>
+                  <b>Соседям на радость!</b>
                   <a class="btn btn-catalog" href="#">Открыть каталог</a>
                 </div>
               </div>
@@ -201,8 +201,8 @@
             <div class="services-slides">
               <div class="services-slide">
                 <div class="services-slide-text">
-                  <h2 class="services-slide-title">Доставка</h2>
-                  <p class="services-slide-description description1">
+                  <h2>Доставка</h2>
+                  <p class="services-slide-description1">
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>
                     поднимая его на ваш этаж!
                   </p>
@@ -210,8 +210,8 @@
               </div>
               <div class="services-slide">
                 <div class="services-slide-text">
-                  <h2 class="services-slide-title">Гарантия</h2>
-                  <p class="services-slide-description description2">
+                  <h2>Гарантия</h2>
+                  <p class="services-slide-description2">
                     Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверны в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                     Дом уж восстановите как-нибудь сами.
                   </p>
@@ -219,8 +219,8 @@
               </div>
               <div class="services-slide">
                 <div class="services-slide-text">
-                  <h2 class="services-slide-title">Кредит</h2>
-                  <p class="services-slide-description description3">
+                  <h2>Кредит</h2>
+                  <p class="services-slide-description3">
                     Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.
                   </p>
                   <a class="btn btn-application" href="#">Отправить заявку</a>
@@ -254,7 +254,7 @@
               Вы можете забрать товар сами,<br> 
               заехав в наш офис:
             </p>
-            <a href="#"><img src="img/map.jpg" width="300" height="159" alt="Карта"></a>
+            <a class="js-map" href="#"><img src="img/map.jpg" width="300" height="159" alt="Карта"></a>
             <a class="btn btn-contact" href="#">Заблудились? Напишите нам!</a>
           </div>
         </div>
@@ -267,7 +267,7 @@
           <ul>
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
-            <li><a href="#">Каталог</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
@@ -307,5 +307,32 @@
         </div>
       </div> 
     </footer>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-content-wrapper">
+          <div class="modal-content-half">
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" name="login" id="name-field" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="modal-content-half">
+            <label for="email-field">Ваш e-mail</label>
+            <input type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+          </div>
+          <label for="message">Текст письма:</label>
+          <textarea name="comments" id="message">В свободной форме</textarea>
+        </div>
+        <div class="modal-content-bottom">
+          <div class="modal-content-wrapper">
+            <button class="btn btn-modal-content" type="submit">Отправить</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.320894615997645!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462893531736" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

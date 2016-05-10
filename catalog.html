@@ -65,7 +65,7 @@
             <li><a href="#">Инструмент</a></li>
             <li><a href="#">Перфораторы</a></li>
           </ul>
-          <h1 class="main-title">Перфораторы</h1>
+          <h1>Перфораторы</h1>
         </div>
         <section class="column-filters">
           <span class="column-header">Фильтр:</span>
@@ -85,7 +85,7 @@
               </div>
             </div>
             <div class="producers-filter">
-              <h3 class="column-filters-title producers-filter-title">Производители:</h3>
+              <h3 class="column-filters-title">Производители:</h3>
               <ul class="producers-filter-list">
                 <li>
                   <input type="checkbox" name="Bosch" id="producer-1" checked>
@@ -108,7 +108,7 @@
               </ul>
             </div>
             <div class="power-filter">
-              <h3 class="column-filters-title power-filter-title">Питание:</h3>
+              <h3 class="column-filters-title">Питание:</h3>
               <ul class="power-filter-list">
                 <li>
                   <input type="radio" name="powersup" id="power-1" value="battery" checked>
@@ -244,20 +244,18 @@
               <div class="catalog-item-new-price">12500 Р.</div>
             </article>    
           </div>
-          <div class="paginator">
-            <ul class="paginator-list">
-              <li><a class="active">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a class="next" href="#">Следующая</a></li>
-            </ul>
-          </div>
+          <ul class="paginator">
+            <li><a class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a class="next" href="#">Следующая</a></li>
+          </ul>
         </section>
       </div>
       <div class="about-perforator">
         <div class="container">
-          <h2 class="about-perforator-title">Пара слов о перфораторах</h2>
-          <p class="about-perforator-description">
+          <h2>Пара слов о перфораторах</h2>
+          <p>
             Перфоратор - универсальный строительный инструмент. Предназначен для сверления и дробления отверстий в кирпиче, бетоне и камне.<br>
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
@@ -266,7 +264,7 @@
     </main>
     <footer class="upper-footer">
       <div class="container clearfix">
-        <a class="footer-logo" href="#">Техномарт</a>
+        <a class="footer-logo" href="index.html">Техномарт</a>
         <div class="footer-second-nav">
           <ul>
             <li><a href="#">Компания</a></li>
@@ -311,5 +309,18 @@
         </div>
       </div> 
     </footer>
+    <div class="modal-content-cart">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="modal-content-wrapper">
+        <b>Товар добавлен в корзину!</b>
+      </div>
+      <div class="modal-content-bottom">
+        <div class="modal-content-wrapper">
+          <a class="btn btn-order" href="">Оформить заказ</a>
+          <button class="btn-continue" type="submit">Продолжить покупки</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
