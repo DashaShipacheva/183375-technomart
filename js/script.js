@@ -66,3 +66,25 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+var cartOpen = document.querySelectorAll(".catalog-item-buy");
+var cartPopup = document.querySelector(".modal-content-cart");
+var cartClose = cartPopup.querySelector(".modal-content-close");
+
+cartOpen.addEventListener("click", function(event) {
+  event.preventDefault();
+  cartPopup.classList.add("modal-content-show");
+});
+
+cartClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  cartPopup.classList.remove("modal-content-show");
+});
+
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    if (cartPopup.classList.contains("modal-content-show")) {
+      cartPopup.classList.remove("modal-content-show");
+    }
+  }
+});

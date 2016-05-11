@@ -5,6 +5,7 @@
   src:
     local("Cuprum"), 
     local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff") format("woff"),
     url("../fonts/cuprum.woff2") format("woff2");
 }
 
@@ -15,6 +16,7 @@
   src:
     local("Cuprum Bold"), 
     local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff") format("woff"),
     url("../fonts/cuprumbold.woff2") format("woff2");
 }
 
@@ -25,6 +27,7 @@
   src:
     local("Cuprum Bold Italic"), 
     local("Cuprum-BoldItalic"),
+    url("../fonts/cuprumbolditalic.woff") format("woff"),
     url("../fonts/cuprumbolditalic.woff2") format("woff2");
 }
 
@@ -35,6 +38,7 @@
   src:
     local("Cuprum Italic"), 
     local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff") format("woff"),
     url("../fonts/cuprumitalic.woff2") format("woff2");
 }
 
@@ -45,6 +49,7 @@
   src:
     local("PT Sans"), 
     local("PTSans-Regular"),
+    url("../fonts/ptsans.woff") format("woff"),
     url("../fonts/ptsans.woff2") format("woff2");
 }
 
@@ -55,6 +60,7 @@
   src:
     local("PT Sans Bold"), 
     local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff") format("woff"),
     url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
@@ -263,7 +269,8 @@ body {
   position: relative;
   
   display: inline-block;
-  padding: 9px 55px;
+  padding: 9px 0;
+  width: 220px;
   
   font-size: 24px;
   line-height: 24px;
@@ -275,13 +282,14 @@ body {
   text-decoration: none;
   vertical-align: top;
 }
+
 .header-logo::after {
   content: "";
   position: absolute;
   top: 42px;
   left: 0;
   
-  width: 219px;
+  width: 220px;
   height: 5px;
   
   background-color: #b52933;
@@ -315,9 +323,11 @@ body {
 .header-search input[type="search"] {
   padding: 12px 48px;
   padding-right: 0;
-  width: 270px;
+  width: 222px;
   
   background-color: #293449;
+  
+  box-sizing: content-box;
 }
 
 .header-search input::-webkit-input-placeholder {
@@ -371,9 +381,9 @@ body {
   position: relative;
   
   display: block;
-  padding: 12px;
+  padding: 12px 0;
   padding-left: 44px;
-  padding-right: 28px;
+  width: 106px;
   
   color: #ffffff;
   text-decoration: none;
@@ -414,9 +424,9 @@ body {
   position: relative;
   
   display: block;
-  padding: 12px;
+  padding: 12px 0;
   padding-left: 50px;
-  padding-right: 29px;
+  width: 100px;
   
   color: #ffffff;
   text-decoration: none;
@@ -455,18 +465,18 @@ body {
 
 .header-cart .active {
   padding-left: 49px;
-  padding-right: 25px;
+  width: 100px;
   
   background-color: #ee3643;
 }
 
 .header-order { 
-  padding: 12px;
-  padding-right: 22px;
-  padding-left: 21px;
+  padding: 12px 0;
+  width: 150px;
 
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
 
   color: #ffffff;
   background-color: #63a63e;
@@ -483,7 +493,7 @@ body {
 }
 
 .bottom-header {
-  margin-bottom: 59px;
+  margin-bottom: 60px;
   padding-top: 46px;
   padding-bottom: 60px;
   
@@ -531,12 +541,11 @@ body {
   
   display: inline-block;
   padding: 11px;
-  padding-left: 67px;
-  padding-right: 47px;
+  padding-left: 70px;
+  padding-right: 42px;
   
   font-size: 21px;
   font-weight: 600;
-  letter-spacing: -0.1px;
   
   color: #e9292a;
   border: 3px solid #ffffff;
@@ -558,12 +567,12 @@ body {
 
 .header-contacts .address {
   display: inline-block;
-  padding: 5px 9px;
+  padding: 5px 10px;
   
   font-size: 14px;
   line-height: 24px;
   font-weight: 600;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.4px;
   text-align: center;
   
   color: #32425c;
@@ -790,9 +799,9 @@ body {
 .main-navigation ul {
   margin: 0;
   padding: 0;
+  padding-left: 22px;
   
   font-size: 0;
-  text-align: center;
   
   list-style: none;
 }
@@ -800,16 +809,18 @@ body {
 .main-navigation li {
   display: inline-block;
   
-  font-size: 17px;
-  line-height: 17px;
-  
   vertical-align: top;
 }
 
 .main-navigation a {
   display: block;
-  padding: 21px 31px;
+  padding-top: 21px;
+  padding-left: 30px;
+  padding-right: 31px;
   padding-bottom: 22px;
+  
+  font-size: 17px;
+  line-height: 17px;
   
   color: #ffffff;
   text-decoration: none;
@@ -1161,7 +1172,7 @@ body {
 }
 
 .popular .catalog-items {
-  width: 940px
+  width: 940px;
 }
 
 .column-catalog .catalog-items {
@@ -1270,8 +1281,8 @@ body {
   padding: 7px 0;
   width: 129px;
   
-  background-color: #ffffff;
   color: #32425c;
+  background-color: #ffffff;
   border: 3px solid #63a63e;
 }
 
@@ -1306,6 +1317,7 @@ body {
 
 .catalog-item-image img {
   max-width: 100%;
+  height: auto;
 }
 
 .catalog-item-name {
@@ -1334,7 +1346,7 @@ body {
   
   margin-left: 42px;
   margin-bottom: 20px;
-  padding: 10px;
+  padding-top: 10px;
   padding-bottom: 11px;
   padding-left: 34px;
   padding-right: 36px;
@@ -1400,9 +1412,7 @@ body {
 }
 
 .producers:hover {
-  width: 220px;
-  
-  border: none;
+  border: 1px solid #ffffff;
   box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
@@ -2070,7 +2080,6 @@ body {
   width: 4px;
   height: 4px;
   
-  
   background-color: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -2162,8 +2171,7 @@ body {
   display: none;
 }
 
-.producers-filter-list input[type="checkbox"]:disabled + label::before 
-{
+.producers-filter-list input[type="checkbox"]:disabled + label::before {
   border: 2px solid #b5b5b5;
   opacity: 0.3;
 }
@@ -2231,7 +2239,7 @@ body {
   content: "";
   position: absolute;
   top: -2px;
-  left: 0;
+  left: 0px;
   
   width: 19px;
   height: 19px;
@@ -2477,8 +2485,7 @@ body {
 }
 
 .about-perforator {
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding: 69px 0;
   
   background-color: #f2f6f8;
 }
@@ -2501,7 +2508,7 @@ body {
   line-height: 24px;
 }
 
-/* Всплывающая форма */
+/* Модальные окна */
 
 @keyframes bounce {
   0%   {
@@ -2545,11 +2552,6 @@ body {
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-}
-
-.modal-content-show {
-  display: block;
-  animation: bounce 0.6s;
 }
 
 .modal-error {
@@ -2678,6 +2680,7 @@ body {
   left: 50%;
   z-index: 100;
   
+  display: none;
   margin-left: -310px;
   padding-top: 73px;
   width: 620px;
@@ -2732,4 +2735,9 @@ body {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.modal-content-show {
+  display: block;
+  animation: bounce 0.6s;
 }
