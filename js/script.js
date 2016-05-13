@@ -5,18 +5,11 @@ var form = popup.querySelector("form");
 var login = popup.querySelector("[name=login]");
 var email = popup.querySelector("[name=email]");
 var comment = popup.querySelector("[name=comments]");
-var storage = localStorage.getItem("login");
       
 contact.addEventListener("click", function(event) {
   event.preventDefault();
   popup.classList.add("modal-content-show");
-        
-  if (storage) {
-    login.value = storage;
-    email.focus();
-  } else {
-    login.focus();
-  }
+  login.focus();
 });
       
 close.addEventListener("click", function(event) {
@@ -26,14 +19,12 @@ close.addEventListener("click", function(event) {
 });
       
 form.addEventListener("submit", function(event) {
-  if (!login.value || !email.value || comment.value) {
+  if (!login.value || !email.value || !comment.value) {
     event.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("modal-error");
-  } else {
-    localStorage.setItem("login", login.value);
-  }
+  } 
 });
       
 window.addEventListener("keydown", function(event) {
@@ -67,9 +58,10 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
-var cartOpen = document.querySelectorAll(".catalog-item-buy");
+var cartOpen = document.querySelector(".catalog-item-buy");
 var cartPopup = document.querySelector(".modal-content-cart");
 var cartClose = cartPopup.querySelector(".modal-content-close");
+var cartContinue = cartPopup.querySelector(".btn-continue")
 
 cartOpen.addEventListener("click", function(event) {
   event.preventDefault();
@@ -77,6 +69,11 @@ cartOpen.addEventListener("click", function(event) {
 });
 
 cartClose.addEventListener("click", function(event) {
+  event.preventDefault();
+  cartPopup.classList.remove("modal-content-show");
+});
+
+cartContinue.addEventListener("click", function(event) {
   event.preventDefault();
   cartPopup.classList.remove("modal-content-show");
 });
