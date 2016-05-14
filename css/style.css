@@ -364,7 +364,7 @@ body {
 }
 
 .header-information {
-  margin: 3px 0 42px;
+  margin: 3px 0 40px;
   padding-right: 52px;
   padding-left: 50px;
   width: 198px;
@@ -391,10 +391,11 @@ body {
   display: inline-block;
   padding: 11px;
   padding-left: 70px;
-  padding-right: 42px;
+  padding-right: 48px;
   
   font-size: 21px;
   font-weight: 600;
+  letter-spacing: -0.4px;
   
   color: #e9292a;
   border: 3px solid #ffffff;
@@ -416,7 +417,7 @@ body {
 
 .header-contacts .address {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 4px 10px;
   
   font-size: 14px;
   line-height: 24px;
@@ -429,7 +430,7 @@ body {
 }
 
 .user-block {
-  padding-left: 15px;
+  padding-left: 19px;
   
   font-size: 0;
 }
@@ -440,7 +441,7 @@ body {
   display: inline-block;
   margin-right: 10px;
   padding: 13px;
-  padding-left: 48px;
+  padding-left: 47px;
   padding-right: 26px;
   
   font-size: 21px;
@@ -484,7 +485,7 @@ body {
 
 .registry {
   display: inline-block;
-  padding: 13px 25px;
+  padding: 13px 24px;
   
   font-size: 21px;
   line-height: 18px;
@@ -594,7 +595,7 @@ body {
 
 .user-account li {
   display: inline-block;
-  padding-top: 6px;
+  padding-top: 7px;
   
   font-size: 16px;
   line-height: 18px;
@@ -998,7 +999,7 @@ body {
   color: #32425c;
 }
 
-.popular-title {
+.popular-header .popular-title {
   padding-left: 25px;
 }
 
@@ -1013,8 +1014,12 @@ body {
 }
 
 .column-catalog .catalog-items {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   width: 700px;
+}
+
+.column-catalog .catalog-item {
+  margin-bottom: 19px;
 }
 
 .catalog-items {
@@ -1257,7 +1262,7 @@ body {
 
 .services {
   margin-bottom: 77px;
-  padding-top: 68px;
+  padding-top: 66px;
   
   background-color: #f2f6f8;
 }
@@ -1278,6 +1283,7 @@ body {
 .services-header h2 {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
   
   font-size: 30px;
   line-height: 24px;
@@ -1287,7 +1293,7 @@ body {
 
 .services-header p {
   margin: 0;
-  margin-top: 29px;
+  margin-bottom: 69px;
   
   font-size: 13px;
   line-height: 24px;
@@ -1304,7 +1310,6 @@ body {
 .services-slider-controls {
   position: relative;
   
-  margin-top: 68px;
   padding: 0;
   width: 240px;
   
@@ -1326,7 +1331,7 @@ body {
 .services-slider-controls label {
   display: block;
   margin: 0;
-  padding: 15px 0 17px 22px;
+  padding: 14px 0 17px 22px;
   width: 218px;
   
   font-size: 21px;
@@ -1427,7 +1432,7 @@ body {
 }
 
 .company {
-  margin-bottom: 85px;
+  margin-bottom: 84px;
   
   color: #000000;
 }
@@ -1641,7 +1646,7 @@ body {
 }
 
 .bottom-footer {
-  padding-top: 38px;
+  padding-top: 37px;
   padding-bottom: 31px;
   
   color: #ffffff;
@@ -1669,7 +1674,7 @@ body {
   display: inline-block;
   margin: 0;
   width: 41px;
-  height: 41px;
+  height: 40px;
   
   font-size: 0;
   line-height: 41px;
@@ -1693,11 +1698,11 @@ body {
 }
 
 .social-btn-fb {
-  background-position: -185px -43px;
+  background-position: -184px -43px;
 }
 
 .social-btn-inst {
-  background-position: -218px -75px;
+  background-position: -217px -74px;
 }
 
 .footer-feedback {
@@ -1822,7 +1827,6 @@ body {
 .inner-page-title h1 {
   margin: 0;
   padding: 29px;
-  padding-left: 30px;
   
   font-size: 30px;
   line-height: 30px;
@@ -1844,7 +1848,6 @@ body {
   float: left;
   margin-bottom: 12px;
   padding: 10px;
-  padding-bottom: 11px;
   padding-left: 19px;
   width: 191px;
   
@@ -1857,7 +1860,7 @@ body {
 .column-filters-title {
   margin: 0;
   margin-top: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   
   font-size: 17px;
   line-height: 30px;
@@ -1866,7 +1869,7 @@ body {
 }
 
 .producers-filter h3 {
-  margin-top: 18px;
+  margin-top: 17px;
   margin-bottom: 15px;
 }
 
@@ -2031,7 +2034,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 }
 
 .power-filter h3 {
-  margin-top: 19px;
+  margin-top: 17px;
   margin-bottom: 12px;
 }
 
@@ -2114,7 +2117,7 @@ input[type="radio"]:checked:disabled + label::after {
 
 .btn-filter {
   display: inline-block;
-  margin-top: 56px;
+  margin-top: 58px;
   padding: 9px 38px;
   
   text-align: center;
@@ -2133,7 +2136,7 @@ input[type="radio"]:checked:disabled + label::after {
 }
 
 .catalog-sorting {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   
   background-color: #f7f3ec;
   border-radius: 3px;
@@ -2541,7 +2544,7 @@ input[type="radio"]:checked:disabled + label::after {
   width: 66px;
   height: 66px;
   
-  background: #63a63e url("../img/Checkmark.png") no-repeat;
+  background: #63a63e url("../img/checkmark.png") no-repeat;
   background-position: 50% 50%;
   border-radius: 50%;
 }
