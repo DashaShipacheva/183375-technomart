@@ -830,12 +830,6 @@ body {
   height: 266px;
 }
 
-.slider input[type="radio"] {
-  position: absolute;
-  
-  opacity: 0;
-}
-
 .slider-controls {
   position: absolute;
   bottom: 36px;
@@ -1305,10 +1299,6 @@ body {
   
   width: 970px;
   height: 285px;
-}
-
-.services-slider input[type="radio"] {
-  display: none;
 }
 
 .services-slider-controls {
@@ -1888,9 +1878,9 @@ body {
 .range-filter-controls {
   position: relative;
   
-  margin-bottom: 10px;
-  padding: 40px 20px 0;
-  height: 41px;
+  margin-bottom: 9px;
+  padding: 39px 20px 0;
+  height: 40px;
   
   background-color: #f7f3ec;
   border-bottom-left-radius: 5px;
@@ -1974,11 +1964,11 @@ body {
   text-transform: uppercase;
 }
 
-.producers-filter-list input[type="checkbox"] {
+input[type="checkbox"] {
   display: none;
 }
 
-.producers-filter-list input[type="checkbox"] + label {
+input[type="checkbox"] + label {
   position: relative;
   
   display: block;
@@ -1987,7 +1977,7 @@ body {
   cursor: pointer;
 }
 
-.producers-filter-list input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -2001,20 +1991,20 @@ body {
   border-radius: 5px;
 }
 
-.producers-filter-list input[type="checkbox"] + label:hover::before {
+input[type="checkbox"] + label:hover::before {
   border: 2px solid #b5b5b5;
 }
 
-.producers-filter-list input[type="checkbox"]:checked + label::before {
+input[type="checkbox"]:checked + label::before {
   display: none;
 }
 
-.producers-filter-list input[type="checkbox"]:disabled + label::before {
+input[type="checkbox"]:disabled + label::before {
   border: 2px solid #b5b5b5;
   opacity: 0.3;
 }
 
-.producers-filter-list input[type="checkbox"]:checked + label::after {
+input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -2027,11 +2017,11 @@ body {
   background-position: -10px -10px;
 }
 
-.producers-filter-list input[type="checkbox"]:checked + label:hover::after {
+input[type="checkbox"]:checked + label:hover::after {
   background-position: -226px -10px;
 }
 
-.producers-filter-list input[type="checkbox"]:checked:disabled + label::after {
+input[type="checkbox"]:checked:disabled + label::after {
   background-position: -226px -10px;
   opacity: 0.3;
 }
@@ -2060,11 +2050,11 @@ body {
   text-transform: uppercase;
 }
 
-.power-filter-list input[type="radio"] {
+input[type="radio"] {
   display: none;
 }
 
-.power-filter-list input[type="radio"] + label {
+input[type="radio"] + label {
   position: relative;
   
   display: block;
@@ -2073,7 +2063,7 @@ body {
   cursor: pointer;
 }
 
-.power-filter-list input[type="radio"] + label::before {
+input[type="radio"] + label::before {
   content: "";
   position: absolute;
   top: -2px;
@@ -2087,20 +2077,20 @@ body {
   border-radius: 50%;
 }
 
-.power-filter-list input[type="radio"] + label:hover::before {
+input[type="radio"] + label:hover::before {
   border: 3px solid #b5b5b5;
 }
 
-.power-filter-list input[type="radio"]:disabled + label::before {
+input[type="radio"]:disabled + label::before {
   border: 3px solid #b5b5b5;
   opacity: 0.3;
 }
 
-.power-filter-list input[type="radio"]:checked + label::before {
+input[type="radio"]:checked + label::before {
   display: none;
 }
 
-.power-filter-list input[type="radio"]:checked + label::after {
+input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   top: -2px;
@@ -2113,11 +2103,11 @@ body {
   background-position: -155px -53px;
 }
 
-.power-filter-list input[type="radio"]:checked + label:hover::after {
+input[type="radio"]:checked + label:hover::after {
   background-position: -10px -53px;
 }
 
-.power-filter-list input[type="radio"]:checked:disabled + label::after {
+input[type="radio"]:checked:disabled + label::after {
   background-position: -10px -53px;
   opacity: 0.3;
 }
@@ -2134,6 +2124,7 @@ body {
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   vertical-align: top;
+  cursor: pointer;
 }
 
 .column-catalog {
